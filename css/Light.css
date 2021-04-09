@@ -1,0 +1,84 @@
+/* Day-Theme */
+
+body{
+    background-color: white;
+}
+
+button{
+    background-color: white;
+}
+
+.button-day, .button-night{
+    background-color:black;
+    color: white;
+    border: none;
+}
+
+.zone-1{
+    border-bottom: 1px solid #ccc;
+}
+
+.menu a{
+    color: black;
+}
+
+.slick-next::before, .slick-prev::before {
+    color: #ccc !important;
+}
+
+.post{
+    background-color: white;
+    border-top: 8px solid black;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.741);
+}
+
+.info h3{
+    border-bottom: 1px solid #ccc;
+}
+
+.button-read:hover{
+    background-color: rgb(54, 53, 53);
+}
+
+.button-read a{
+    color: white;
+}
+
+.post2{
+    background-color: rgb(255, 255, 255);
+    border-top: 8px solid rgb(225, 198, 44);
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.741);
+}
+
+
+#login h4{
+    border-bottom: 1px solid #ccc;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    border:1px solid #ccc;
+}
+
+form input:hover{
+    border: 1px solid rgba(225, 198, 44, 0.686);
+    box-shadow: 0 0 1px inset #ccc;
+}
+
+.button-submit{
+    background-color:black;
+    color: white;
+}
+
+.container2{
+    background-color: black;
+}
+
+.footer-content{
+    color:white;
+    border-bottom: 4px solid  rgba(225, 198, 44, 0.686);
+}
+
+
+
