@@ -5,7 +5,8 @@ $(document).ready(function(){
 
       $('.slider').slick({
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
+        fade: true,
 
       });
 
@@ -102,6 +103,41 @@ $(document).ready(function(){
             $(".button-day").show();
       });
 
+      
+       /////////////////////////////////////// lOGIN///////////////////////////////
+
+       $("#login form").submit(function(){
+        var form_name = $("#form_name").val();
+
+        localStorage.setItem("form_name", form_name);
+      });
+
+      var form_name = localStorage.getItem("form_name");
+      console.log(form_name);
+
+      if (form_name != null && form_name != "undefined") {
+        var sign_up = $("#sign_up");
+
+        sign_up.html(" Bienvenid@ <br> <strong>" +form_name+" </strong>");
+        sign_up.append("<br><img id=user-img> </img>");
+        sign_up.append("<a href=# id=logout> Cerrar Sesión </a>");
+
+        $("#login form").hide();
+        $("#login h4").css("font-size", "20px");
+        $("#login h4 strong").css("font-size", "30px");
+        $("#login h4").css("border-bottom", "none");
+        
+
+        $("#logout").click(function(){
+
+          localStorage.clear();
+          location.reload();
+
+        });
+      
+      }  
+
+     
 
   });
 
