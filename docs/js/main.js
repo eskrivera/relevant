@@ -87,18 +87,18 @@ $(document).ready(function(){
         $(".button-day").hide();
 
         $(".button-day").click(function(){
-            theme.attr("href", "../docs/css/Light.css");
+            theme.attr("href", "../css/Light.css");
             whiteIcon.attr("color", "black");
-            change.attr("src", "../docs/img/relevant.png");
+            change.attr("src", "../img/relevant.png");
             $(this).hide();
             $(".button-night").show();
 
         });
         
         $(".button-night").click(function(){
-            theme.attr("href", "../docs/css/Dark.css");
+            theme.attr("href", "../css/Dark.css");
             whiteIcon.attr("color", "white");
-            change.attr("src", "../docs/img/relevant-white.png");
+            change.attr("src", "../img/relevant-white.png");
             $(this).hide();
             $(".button-day").show();
       });
